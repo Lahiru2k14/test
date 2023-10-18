@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="777.0" prefWidth="1490.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerFormController">
+   <children>
+      <AnchorPane fx:id="customerPane" layoutX="25.0" layoutY="15.0" prefHeight="735.0" prefWidth="1440.0" style="-fx-background-color: black;">
+         <children>
+            <JFXButton layoutX="40.0" layoutY="37.0" onAction="#backBtnOnAction" style="-fx-background-color: red;" text="Back" textFill="#e4dcdc">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="40.0" layoutY="104.0" text="Customer Id:" textFill="#e8e2e2">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="155.0" text="Customer Name:  :" textFill="#e8e2e2">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="203.0" text="Customer Address:" textFill="#e8e2e2">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtName" layoutX="224.0" layoutY="155.0" promptText="Customer Name" />
+            <JFXTextField layoutX="40.0" layoutY="275.0" promptText="item Code" />
+            <JFXTextField fx:id="txtAddress" layoutX="224.0" layoutY="203.0" promptText="Customer Contact" />
+            <JFXButton layoutX="1326.0" layoutY="285.0" onAction="#saveBtnOnAction" style="-fx-background-color: red;" text="Save" textFill="#e4dcdc">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="1324.0" layoutY="140.0" onAction="#clearBtnOnAction" style="-fx-background-color: red;" text="Clear" textFill="#e4dcdc">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXTreeTableView fx:id="tblCustomer" layoutX="42.0" layoutY="344.0" prefHeight="317.0" prefWidth="1378.0">
+               <columns>
+                  <TreeTableColumn fx:id="colCustId" prefWidth="195.0" text="Customer Id" />
+                  <TreeTableColumn fx:id="colName" prefWidth="400.0" text="Name" />
+                  <TreeTableColumn fx:id="colAddress" prefWidth="331.0" text="Address" />
+                  <TreeTableColumn fx:id="colSalary" prefWidth="253.0" text="Salary" />
+                  <TreeTableColumn fx:id="colOption" prefWidth="198.0" text="Options" />
+               </columns>
+            </JFXTreeTableView>
+            <Label fx:id="lblCustId" layoutX="224.0" layoutY="109.0" text="C001" textFill="#f2ecec">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="1316.0" layoutY="235.0" onAction="#updateBtnOnAction" style="-fx-background-color: red;" text="Update" textFill="#e4dcdc">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="224.0" layoutY="285.0" style="-fx-background-color: red;" text="Search" textFill="#e4dcdc">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
