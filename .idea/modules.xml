@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Clothify/Clothify.iml" filepath="$PROJECT_DIR$/Clothify/Clothify.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Maven-POS System.iml" filepath="$PROJECT_DIR$/.idea/Maven-POS System.iml" />
     </modules>
   </component>

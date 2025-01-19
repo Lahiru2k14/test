@@ -9,8 +9,5 @@
         <module name="Clothify" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Clothify" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>
